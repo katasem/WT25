@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erste HTML-Seite</title>
+    <link rel="stylesheet" href="./styles/mystyles.css"> <!-- aus Vl.2, verbunden mit der css-Datei-->
+    <style> h1 {text-transform: lowercase; /* KOMMENTAR in CSS */ }
+            ol {color:blueviolet}
+            .fgYellow {background-color: yellow;}
+            .bgBrown { background-color: rgb(111, 65, 9);}
+            #firstH2 { text-decoration: underline;}
+            article p {color:rgb(197, 58, 36)}
+            ol>li {color: blue;}
+            section>p {color: rgb(18, 174, 104);}
+            a {text-decoration: none;}
+            a:hover { background-color: blue; color: white;}
+            p::first-letter {font-size: 3em;}
+
+        
+
+    </style> <!-- alle h1-Elemente sind jetzt kleingeschrieben-->
+
+
+
 </head>
 <body>
     <header>
+        <h1 style="background-color: rgb(50, 140, 140);"> "Teilnehmer_innen WebTech</h1> <!-- style Element aus Vl.2 hinzugefügt als Bsp, vorsicht mit Style in der html-Datei, ist dann nicht mehr übersichtig und nicht mehr wiederverwendbar-->
         <h1>Willkommen zu meiner ersten <HTML-Seite!></h1>
         <h2>etwas kleinere Überschrift</h2>
         <h3>noch kleiner</h3>  
         <h6>am kleinsten</h6>
-        <h1>ÜBUNGEN</h1>
+        <h1>ÜBUNGEN 1</h1>
         <a href="http://127.0.0.1:3000/WT25/Uebung1/uebung1.html">Uebung1</a>
+        <h1>ÜBUNGEN 2</h1>
+        <a href="http://127.0.0.1:3000/WT25/Uebung2/uebung2.html">Uebung2</a>
     </header>
   <p id="p1" class="rotHG gelbeFront kursiv">hier ist ein Absatz</p>
   <a href="https://www.htw-berlin.de/">HTW Berlin</a>
   <a href="./html/seite1.html">Seite 1</a>
   <img src="./images/htw-logo.jpg" alt="HTW-Logo" width="200"/>
+  <img src="./images/htw-logo.jpg" alt="HTW-Logo" style="width:200px"/>
  <!-- KOMMENTAR -->
- 
+ <section>
+    <p> hallo hallo</p>
+    <p> direktes Kind einer selection</p>
+ </section>
   <ol>
 <ul>
     <li><h1>erster Punkt</h1></li>
@@ -63,7 +89,10 @@
             <td>vier zwei</td>
             <td>vier drei</td>
         </tr>
-
+        <h2 id="firstH2"> Section 1</h2>
+        <article> <p class="bgBrown">lalalalallalalalalalalalalalalallala</p></article>
+        <article> <p class="fgYellow">lalalalallalalalalalalalalalalallala</p></article>
+        <article> <p class="bgBrown">lalalalallalalalalalalalalalalallala</p></article>
 
 
 
