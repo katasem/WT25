@@ -1,0 +1,58 @@
+/* man kann body oder auch * schreiben, was für alles bedeutet, also body gemeint*/
+body{
+    font-family: Verdana;
+    margin: 1%;
+
+header{
+    background-color: green;
+    color: white;
+    padding: 1px;
+    margin-bottom: 10px;    
+    text-align: center;
+}
+}
+/*
+header{
+    background-color: #AFAFAF;
+    color: #ff5f00;
+    text-align: center;
+}
+nav{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+nav a{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-decoration: none;
+    border: 1% solid #AFAFAF;
+    border-radius: 10%;
+    padding: 1%;
+    background-color: #0082d1;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    
+}
+nav a:hover{
+    background-color: #AFAFAF;
+    color: #ff5f00;
+}
+table, th, td{
+    border: 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+table{
+    border-collapse: collapse;
+    border-radius: 1%;
+    align-content: center;
+
+}
+footer{
+    background-color: #ff5f00;
+    color: black;
+    text-align: center;
+    margin-top: 2%;
+    font-size: smaller;
+    padding-top: 1%;
+    padding-bottom: 1%;
+} */
