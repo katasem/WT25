@@ -41,9 +41,33 @@
         </div>
         <div class="pl-4">
             <button type="button" class="btn btn-primary" >Abbrechen</button>
-            <button type="button" class="btn btn-secondary">Registieren</button>
+            <button type="button" class="btn btn-secondary" onclick="register()">Registieren</button>
         </div>
 
     </main>
 </body>
+<script>
+    function register(){
+        console.log('Registierien-Button geklickt')
+        
+        // Eingabe auslesen
+        let firstNameElement = document.querySelector('#firstNameID').value;
+        console.log(firstNameElement)
+        let firstNameValue = firstNameElement.value;
+        console.log(firstNameValue)
+        let lastNameValue = document.querySelector('#lastNameID').value;
+        let emailValue = querySelector('#emailID').value;
+        let ipaddressValue = document.querySelector('#idaddressID').value;
+
+        // Eingabe auf Konsole ausgeben
+        console.log('firstNameValue : ', firstNameValue)
+        console.log('lastNameValue : ', lastNameValue)
+        console.log('emailValue : ', emailValue)
+        console.log('ipaddressValue : ', ipaddressValue)
+    }
+
+
+
+
+</script>
 </html>

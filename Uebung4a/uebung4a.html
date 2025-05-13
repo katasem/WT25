@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Übung 4</title>
+  <!-- <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+  <main class="container">
+    <h1 class="m-5">Teilnehmerin Registrierung</h1>
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="firstNameID" placeholder="First name">
+          <label for="firstNameID">First name</label>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="lastNameID" placeholder="Last name">
+          <label for="lastNameID">Last name</label>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="emailID" placeholder="E-Mail">
+          <label for="emailID">E-Mail</label>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="ipaddressID" placeholder="IP-Address">
+          <label for="ipaddressID">IP-Address</label>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <button type="cancel" class="btn btn-secondary btn-lg w-100">Abbrechen</button>
+      </div>
+
+      <div class="col-6">
+        <button type="submit" class="btn btn-success btn-lg w-100" onclick="register()">Registrieren</button>
+      </div>
+    </div>
+  </main>
+</body>
+<script>
+    function register(){
+        event.preventDefault()
+        console.log('Registierien-Button geklickt')
+        
+        // Eingabe auslesen
+        let firstNameElement = document.querySelector('#firstNameID');
+        console.log(firstNameElement)
+        let firstNameValue = firstNameElement.value;
+        console.log(firstNameValue)
+        let lastNameValue = document.querySelector('#lastNameID').value;
+        let emailValue = querySelector('#emailID').value;
+        let ipaddressValue = document.querySelector('#ipaddressID').value;
+
+        // Eingabe auf Konsole ausgeben
+        console.log('firstNameValue : ', firstNameValue)
+        console.log('lastNameValue : ', lastNameValue)
+        console.log('emailValue : ', emailValue)
+        console.log('ipaddressValue : ', ipaddressValue)
+    }
+
+
+
+
+</script>
+</html>
